@@ -20,5 +20,20 @@ var questions = [
         answer: 'makes your heart stronger',
     },
 
-    
+
 ]
+
+
+the best time for a marathon is currently:
+two and a half hous
+a bit over two hours
+way under two hours
+answer: a bit over two hours
+
+--------
+
+"Hitting the wall" means:
+your muscles get tired and you can't continue
+you are not running fast enough
+you are too  thirsty and hungry
+amswer: your muscles get tired and you can't continue
