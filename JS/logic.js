@@ -31,7 +31,7 @@ getQuestion();
 }
 
 //getting the questions from array//
-funtion getQuestion() {
+function getQuestion() {
 
     var currentQuestion = questions[currentQuestionIndex];
 
