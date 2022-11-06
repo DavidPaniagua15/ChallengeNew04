@@ -20,6 +20,17 @@ var questions = [
         answer: 'makes your heart stronger',
     },
 
+    {
+        title: 'The best time to fininsh a marathan is currently:',
+        choices: ['two and a half hours', 'a bit over two hours', 'way under two hours'],
+        answer: 'a bit over two hours',
+    },
+
+    {
+        title: 'Finish the sentence: Running :',
+        choices: ['makes your heart stronger', 'helps you put on weight', 'helps imporve the number of white blood cells'],
+        answer: 'makes your heart stronger',
+    },
 
 ]
 
