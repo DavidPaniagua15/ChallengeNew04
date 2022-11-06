@@ -11,5 +11,15 @@ function printHighscores() {
 //creating a (li) tag for each high score//
         var liTag = document.createElement('li');
         liTag.textContent = highscores[i].initials + ' - ' + highscores[i].score;
+
+//displaying highscores on page//
+        var olEl = document.getElementById('highscores');
+        olEl.appendChild(liTag);
     }
 }
+
+function clearHighscores() {
+    window.localStorage.removeItem('highscores');
+    window.location.reload();
+}
+
