@@ -58,3 +58,25 @@ function getQuestion() {
     }
 
 }
+
+function questionClick(event) {
+    var buttonEl = event.target;
+
+//if the click is not the right choice, do nothing//
+    if (!buttonEl.matches ('choice')) {
+        return;
+    }
+
+//check if user choose a wrong option//
+    if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+        
+//penalize time//
+    time -=15;
+
+    if(time < 0) {
+        time = 0;
+    }
+
+}
+
+}
