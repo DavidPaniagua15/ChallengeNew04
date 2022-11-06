@@ -18,5 +18,14 @@ function startQuiz() {
     var startScreenEl =  document.getElementById('start-screen');
     startScreenEl.getAttribute('class', 'hide');
 
-    
+// showing screen action //
+questionsEl.removeAttribute('class');
+
+//timer//
+timerId = setInterval(clockTIick, 1000);
+
+//starting timer//
+timerEl.textContent = time;
+
+getQuestion();
 }
