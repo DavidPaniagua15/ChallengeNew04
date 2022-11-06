@@ -77,6 +77,14 @@ function questionClick(event) {
         time = 0;
     }
 
+//new time on display, new page//
+    timerEl.textContent =  time;
 }
+
+//flash right / wrong feedback//
+    feedbackEl.setAttribute('class', 'feedback');
+    setTimeout(function () {
+        feedbackEl.setAttribute('class', 'feedback hide');
+    }, 1000);
 
 }
