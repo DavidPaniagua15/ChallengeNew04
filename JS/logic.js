@@ -38,5 +38,10 @@ funtion getQuestion() {
 //question title updated //
     var titleEl = document.getElementById('question-title');
     titleEl.textContent = currentQuestion.title;
-    
+   
+//clearing out old question//
+    choicesEl.innerHTML = '';
+
+
+
 }
