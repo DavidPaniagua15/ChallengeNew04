@@ -22,7 +22,7 @@ function startQuiz() {
 questionsEl.removeAttribute('class');
 
 //timer//
-timerId = setInterval(clockTIick, 1000);
+timerId = setInterval(clockTick, 1000);
 
 //starting timer//
 timerEl.textContent = time;
@@ -106,4 +106,22 @@ function quizEnd() {
     var endScreenEl = document.getElementById('end-screen');
     endScreenEl.removeAttribute('class');
 
+//final score//
+    var finalScoreEl = document.getElementById('final-score');
+    finalScoreEl.textContent = time;
+
+//hide question section//
+    questionsEl.setAttribute('class', 'hide');
+}
+
+function clockTick () {
+
+//time updated//
+    time--;
+    timerEl.textContent = time;
+
+//check if user ran out of time//
+    if (time <= 0) {
+        quizEnd();
+    }
 }
