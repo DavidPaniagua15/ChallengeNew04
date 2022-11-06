@@ -27,24 +27,9 @@ var questions = [
     },
 
     {
-        title: 'Finish the sentence: Running :',
-        choices: ['makes your heart stronger', 'helps you put on weight', 'helps imporve the number of white blood cells'],
-        answer: 'makes your heart stronger',
+        title: 'Hitting the wall, means?',
+        choices: ['your muscles get tired and you cant continue', 'you are not running fast enough', 'you are too thirsty and hungry'],
+        answer: 'your muscles get tired and you cant continue',
     },
 
 ]
-
-
-the best time for a marathon is currently:
-two and a half hous
-a bit over two hours
-way under two hours
-answer: a bit over two hours
-
---------
-
-"Hitting the wall" means:
-your muscles get tired and you can't continue
-you are not running fast enough
-you are too  thirsty and hungry
-amswer: your muscles get tired and you can't continue
