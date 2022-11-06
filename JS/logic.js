@@ -42,6 +42,19 @@ funtion getQuestion() {
 //clearing out old question//
     choicesEl.innerHTML = '';
 
+//loop//
+    for (var i=0; i < currentQuestion.choices.length; i++) {
 
+//new button for choice//
+    var choice = currentQuestion.choices[i];
+    var choiceNode = document.createElement('button');
+    choiceNode.setAttribute('class', 'choice');
+    choiceNode.setAttribute('value', choice)
+
+    choiceNode.textContent = i + 1 + '. ' + choice;
+
+//display//
+    choicesEl.appendChild(choiceNode);
+    }
 
 }
