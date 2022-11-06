@@ -87,4 +87,23 @@ function questionClick(event) {
         feedbackEl.setAttribute('class', 'feedback hide');
     }, 1000);
 
+//moving to next question//
+    currentQuestionIndex++;
+
+//checking if we are out of question//
+    if (time <= 0 || currentQuestionIndex === questions.length) {
+        quizEnd();
+    } else {
+        getQuestion();
+    }
+}
+
+function quizEnd() {
+//stop timer//
+    clearInterval(timerId);
+
+//showing end screen//
+    var endScreenEl = document.getElementById('end-screen');
+    endScreenEl.removeAttribute('class');
+
 }
