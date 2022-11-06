@@ -29,3 +29,14 @@ timerEl.textContent = time;
 
 getQuestion();
 }
+
+//getting the questions from array//
+funtion getQuestion() {
+
+    var currentQuestion = questions[currentQuestionIndex];
+
+//question title updated //
+    var titleEl = document.getElementById('question-title');
+    titleEl.textContent = currentQuestion.title;
+    
+}
