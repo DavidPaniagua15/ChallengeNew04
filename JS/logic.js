@@ -125,3 +125,46 @@ function clockTick () {
         quizEnd();
     }
 }
+
+
+    function saveHighscore() {
+//input box value//
+    var initials = initialsEl.value.trim();
+//make sure value wasn't empty//
+    if (initials !== '') {
+//get saved scores from localstorage, if not set to empty array//
+        var highscores =
+            JSON.parse(window.localStorage.getItem('highscores')) || [];
+
+//set a new scored for current user//
+        var newScore = {
+            score: time,
+            initials: initials,
+        };
+
+//save to localstorage//
+        highscores.push(newScore);
+        window.localStorage.setItem('highscores', JSON.stringify(highscores));
+
+//new next page//
+        window.location.href = 'scores.html';
+    }
+}
+
+function checkForEnter(event) {
+// enter key //
+    if (event.key === 'Enter') {
+        saveHighscore();
+    }
+}
+
+//button to submit initials//
+submitBtn.onclick = saveHighscore;
+
+//button to start quiz//
+startBtn.onclick = startQuiz;
+
+//click on elements for the choices//
+choicesEl.onclick = questionClick;
+
+initialsEl.onkeyup = checkForEnter;
