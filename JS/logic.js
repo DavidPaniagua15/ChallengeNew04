@@ -10,3 +10,13 @@ var choicesEl = document.getElementById('choices');
 var submitBtn = document.getElementById('submit');
 var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
+var feedbackEl = document.getElementById('feedback');
+
+//start creen hiden //
+function startQuiz() {
+
+    var startScreenEl =  document.getElementById('start-screen');
+    startScreenEl.getAttribute('class', 'hide');
+
+    
+}
