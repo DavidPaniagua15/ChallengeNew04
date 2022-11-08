@@ -32,4 +32,4 @@ var questions = [
         answer: 'your muscles get tired and you cant continue',
     },
 
-]
+];

@@ -1,6 +1,6 @@
 //var of the quiz state //
 var currentQuestionIndex = 0;
-var time = questions.length * 20;
+var time = questions.length * 15;
 var timeId;
 
 // DOM elements var //
@@ -43,7 +43,7 @@ function getQuestion() {
     choicesEl.innerHTML = '';
 
 //loop//
-    for (var i=0; i < currentQuestion.choices.length; i++) {
+    for (var i = 0; i < currentQuestion.choices.length; i++) {
 
 //new button for choice//
     var choice = currentQuestion.choices[i];
@@ -63,7 +63,7 @@ function questionClick(event) {
     var buttonEl = event.target;
 
 //if the click is not the right choice, do nothing//
-    if (!buttonEl.matches ('choice')) {
+    if (!buttonEl.matches ('.choice')) {
         return;
     }
 
