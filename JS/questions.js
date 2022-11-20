@@ -31,5 +31,4 @@ var questions = [
         choices: ['your muscles get tired and you cant continue', 'you are not running fast enough', 'you are too thirsty and hungry'],
         answer: 'your muscles get tired and you cant continue',
     },
-
 ];

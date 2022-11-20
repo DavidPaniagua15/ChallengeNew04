@@ -1,7 +1,7 @@
 //var of the quiz state //
 var currentQuestionIndex = 0;
 var time = questions.length * 15;
-var timeId;
+var timerId;
 
 // DOM elements var //
 var questionsEl = document.getElementById('questions');
@@ -12,11 +12,11 @@ var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
 var feedbackEl = document.getElementById('feedback');
 
-//start creen hiden //
-function startQuiz() {
 
-    var startScreenEl =  document.getElementById('start-screen');
-    startScreenEl.getAttribute('class', 'hide');
+function startQuiz() {
+//start creen hiden //
+    var startScreenEl = document.getElementById('start-screen');
+    startScreenEl.setAttribute('class', 'hide');
 
 // showing screen action //
 questionsEl.removeAttribute('class');
@@ -30,8 +30,9 @@ timerEl.textContent = time;
 getQuestion();
 }
 
-//getting the questions from array//
 function getQuestion() {
+//getting the questions from array//
+
 
     var currentQuestion = questions[currentQuestionIndex];
 
@@ -63,7 +64,7 @@ function questionClick(event) {
     var buttonEl = event.target;
 
 //if the click is not the right choice, do nothing//
-    if (!buttonEl.matches ('.choice')) {
+    if (!buttonEl.matches('.choice')) {
         return;
     }
 
@@ -71,7 +72,7 @@ function questionClick(event) {
     if (buttonEl.value !== questions[currentQuestionIndex].answer) {
         
 //penalize time//
-    time -=15;
+    time -= 15;
 
     if(time < 0) {
         time = 0;
