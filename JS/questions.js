@@ -1,34 +1,32 @@
 // this is the list of all the questions and answers //
 var questions = [
     {
-        title: 'The marathon goes back to:',
-        choices: ['the Roman wagon race', 'A persian tradition', 'the days of ancient Greece'],
-        answer: 'the days of ancient Greece',
-    },
-
-
-    {
-        title: 'In the days and weeks before the race marathon runners should eat:',
-        choices: ['sugary food', 'a lot of meat', 'a lot of carbohydrates'],
-        answer: 'a lot of carbohydrates',
-    },
-
-
-    {
-        title: 'Finish the sentence: Running :',
-        choices: ['makes your heart stronger', 'helps you put on weight', 'helps imporve the number of white blood cells'],
-        answer: 'makes your heart stronger',
+        title: 'Javascript is an _______ language?',
+        choices: ['Object-Oriented', 'Object-Based', 'Procedural', 'None of the above'],
+        answer: 'Object-Oriented',
     },
 
     {
-        title: 'The best time to fininsh a marathon is currently:',
-        choices: ['two and a half hours', 'a bit over two hours', 'way under two hours'],
-        answer: 'a bit over two hours',
+        title: 'Javascript is an Object-Oriented Language.',
+        choices: ['var', 'let', 'Both A and B', 'None of the above'],
+        answer: 'Both A and B',
     },
 
     {
-        title: 'Hitting the wall, means?',
-        choices: ['your muscles get tired and you cant continue', 'you are not running fast enough', 'you are too thirsty and hungry'],
-        answer: 'your muscles get tired and you cant continue',
+        title: 'Both var and let keywords are used to define a variable in Javascript.',
+        choices: ['getElementbyld()', 'getElementsByClassName()', 'Both A and B', 'None of the above'],
+        answer: 'Both A and B',
+    },
+
+    {
+        title: 'Both the above methods are used to access HTML elements using Javascript.',
+        choices: ['Throws and error', 'Ignores the statements', 'Gives a warning', 'None of the above'],
+        answer: 'Ignores the statements',
+    },
+
+    {
+        title: 'In Javascript, the interpreter will ignore the empty statements whenever it encounters them.',
+        choices: ['document.write()', 'console.log()', 'window.alert()', 'All of the above'],
+        answer: 'All of the above',
     },
 ];
