@@ -1,6 +1,6 @@
 //var of the quiz state //
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+var time = questions.length * 10;
 var timerId;
 
 // DOM elements var //
@@ -80,8 +80,10 @@ function questionClick(event) {
 
 //new time on display, new page//
     timerEl.textContent =  time;
+    feedbackEl.textContent = 'Wrong!';
+} else {
+    feedbackEl.textContent = 'Correct!';
 }
-
 //flash right / wrong feedback//
     feedbackEl.setAttribute('class', 'feedback');
     setTimeout(function () {

@@ -33,6 +33,8 @@ body {
   
   .choices button {
     display: block;
+    box-shadow: #72a570;
+    font-family: monospace;
   }
   
   input[type="text"] {
@@ -42,7 +44,7 @@ body {
   ol {
     padding-left: 0px;
     max-height: 400px;
-    overflow: auto;
+    overflow: center;
   }
   
   li {
@@ -57,7 +59,9 @@ body {
 .wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+  text-align: left;
 }
+ 
 
 .hide {
   display: none;
@@ -73,15 +77,15 @@ body {
     left: 10px;
   }
   
-  .feedback {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: gray;
-    border-top: 2px solid #ccc;
-  }
-  
+.feedback {
+  font-family: monospace;
+  font-size: 200%;
+  margin-top: auto;
+  padding-top: 10px;
+  color: black;
+  border-top: 2px solid black;
+}  
+
   .timer {
     position: absolute;
     top: 10px;
