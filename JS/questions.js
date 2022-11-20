@@ -21,7 +21,7 @@ var questions = [
     },
 
     {
-        title: 'The best time to fininsh a marathan is currently:',
+        title: 'The best time to fininsh a marathon is currently:',
         choices: ['two and a half hours', 'a bit over two hours', 'way under two hours'],
         answer: 'a bit over two hours',
     },
